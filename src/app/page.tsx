@@ -1,15 +1,9 @@
-import { type FC } from "react";
+import { MessageList } from "@/components/MessageList";
 
-const Home: FC = () => {
+export default function Home() {
   return (
-    <div className="">
-      <div className="text-lg font-bold">Home</div>
-      <div>
-        <span className="text-blue-500">Hello</span>
-        <span className="text-red-500">World</span>
-      </div>
-    </div>
+    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+      <MessageList />
+    </main>
   );
-};
-
-export default Home;
+}
